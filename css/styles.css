@@ -1,0 +1,75 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 0;
+}
+
+
+body{
+    background-color: #2b2b2b;
+    font-family: "Roboto Mono", monospace;
+        
+}
+
+
+.navigation{
+    background-color: #2b2b2b;
+    color: white;
+    height: 50px;
+}
+
+.navigation ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    height: 50px;
+    text-align: right;
+}
+
+.navigation li{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.capa{
+    color: white;
+}
+
+.capa span {
+    color: #b51a1a;
+    display: block;
+}
+
+.capa div{
+    display: inline-block;
+    height: 650px;
+}
+
+.profile-image{
+    width: 40%;
+    text-align: center;
+}
+.profile-image img{
+    width: 350px;
+    border-radius: 350px;
+    margin-top: 100px;
+
+}
+
+.profile-title{
+    vertical-align: top;
+    width: 59%;
+}
+
+.profile-title h1{
+    font-size: 58px;
+    margin-top: 200px;
+}
+
+.profile-title h2{
+    font-size: 30px;
+}
