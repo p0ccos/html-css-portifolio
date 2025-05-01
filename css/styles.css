@@ -50,6 +50,12 @@ li.threeline-icon {
     display: none;
 }
 
+li.threeline-icon:hover {
+    color:#b51a1a;
+    cursor: pointer;
+}
+
+
 .capa {
     color: white;
     animation-name: fadeInUp;
@@ -386,5 +392,22 @@ li.threeline-icon {
     }
     .caminho li a{
         font-size: 12px;
+    }
+    .menujs{
+        height: auto;
+
+    }
+    .menujs ul{
+        height: auto;
+        text-align: center;
+        padding-right: 15%;
+        padding-left: 15%;
+        
+    }
+    .menujs li{
+        display: block;
+        border-bottom: solid 1px #b51a1a;
+        padding: 0px;
+        width: 100%;
     }
 }
