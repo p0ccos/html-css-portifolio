@@ -63,7 +63,7 @@ body{
 
 .profile-title{
     vertical-align: top;
-    width: 59%;
+    width: 60%;
 }
 
 .profile-title h1{
@@ -75,8 +75,9 @@ body{
 }
 
 .profile-title h2{
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 100;
     line-height: 25px;
     margin-top: -25px;
 }
+
