@@ -1,24 +1,25 @@
-html, body{
+html, body {
     margin: 0;
     padding: 0;
 }
 
-
-body{
+body {
     background-color: #2b2b2b;
     font-family: "Roboto Mono", monospace;
-        
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 
-
-.navigation{
+.navigation {
     background-color: #2b2b2b;
     color: white;
     height: 50px;
     font-weight: 100;
+    animation-name: fadeInDown;
+    animation-duration: 1.5s;
 }
 
-.navigation ul{
+.navigation ul {
     list-style: none;
     padding-left: 0;
     margin-top: 0;
@@ -26,171 +27,364 @@ body{
     text-align: right;
 }
 
-.navigation li{
+.navigation li {
     display: inline-block;
     padding-left: 30px;
     padding-right: 30px;
     line-height: 50px;
     font-size: 16px;
+    animation-name: fadeInRight;
+    animation-duration: 1.8s;
 }
 
-.navigation a{
+.navigation a {
     color: white;
     text-decoration: none;
 }
 
-.navigation a:hover{
+.navigation a:hover {
     color: #b51a1a;
 }
 
-.navegation li.threeline-icon{
+li.threeline-icon {
     display: none;
 }
-.capa{
+
+.capa {
     color: white;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
 }
 
 .capa span {
     color: #b51a1a;
     display: block;
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
 }
 
-.capa div{
+.capa div {
     display: inline-block;
     height: 650px;
 }
 
-.profile-image{
+.profile-image {
     width: 40%;
     text-align: center;
+    animation-name: profile-capa;
+    animation-duration: 5s;
 }
-.profile-image img{
+
+.profile-image img {
     width: 350px;
     border-radius: 350px;
     margin-top: 100px;
-
 }
 
-.profile-title{
+.profile-title {
     vertical-align: top;
     width: 59%;
+    animation-name: title-capa;
+    animation-duration: 5s;
 }
 
-.profile-title h1{
+.profile-title h1 {
     text-transform: uppercase;
     font-size: 58px;
     margin-top: 200px;
     font-weight: 400;
     line-height: 58px;
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
 }
 
-.profile-title h2{
+.profile-title h2 {
     font-size: 16px;
     font-weight: 100;
     line-height: 25px;
     margin-top: -25px;
+    animation-name: fadeInRight;
+    animation-duration: 2s;
 }
 
-.main{
+.main {
     padding: 80px 180px 80px 100px;
-
+    animation-name: fadeInUp;
+    animation-duration: 2s;
 }
 
-.main h1{
+.main h1 {
     color: white;
     font-weight: normal;
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }
 
-.main h2{
+.main h2 {
     color: white;
     font-weight: normal;
     font-size: 12px;
     text-transform: uppercase;
     margin-top: 20px;
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
 }
 
-.main h3{
+.main h3 {
     color: #b51a1a;
     font-weight: normal;
     font-size: 16px;
     text-transform: uppercase;
+    animation-name: fadeInRight;
+    animation-duration: 2s;
 }
 
-.main p{
+.main p {
     font-size: 18px;
     line-height: 25px;
     font-weight: 100;
     color: white;
     text-align: justify;
+    animation-name: fadeInUp;
+    animation-duration: 2.2s;
 }
 
-.cv-pic{
+.cv-pic {
     float: left;
     width: 250px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
 }
 
-.caminho{
+.caminho {
     list-style: none;
     padding-left: 0;
     margin-top: 0;
     color: grey;
-
 }
 
-.caminho li{
+.caminho li {
     display: inline-block;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
 }
 
-.main a{
+.caminho li a {
+    color: grey;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.main a {
     color: grey;
     text-decoration: none;
     font-size: 12px;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
 }
 
-.social-img{
+.social-img {
     width: 50px;
     margin-right: 10px;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
 }
 
-.miniatura{
+.miniatura {
     width: 400px;
     height: 320px;
     display: inline-block;
     margin-right: 15px;
     margin-bottom: 15px;
-    background-size: cover;          /* Faz a imagem preencher o espaço */
-    background-position: center;     /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repete a imagem */
-    overflow: hidden; /* Esconde o que não couber no espaço */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
 }
 
-.blackbox{
+.blackbox {
     width: 100%;
     height: 100%;
     background-color: black;
     opacity: 0;
     padding-top: 160px;
-
+    transition: 1s;
 }
 
-.blackbox:hover{
+.blackbox:hover {
     opacity: 0.8;
+    transition: 1s;
 }
 
-.blackbox-text{
+.blackbox-text {
     text-align: center;
     margin-top: 0px;
 }
 
-.blackbox-text h1{
+.blackbox-text h1 {
     font-size: 30px;
     color: #b51a1a;
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 0px;
-
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }
 
+.back-text {
+    color: #b51a1a;
+    font-size: 30px;
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+}
+
+/* Animações */
+
+@keyframes profile-capa {
+    0% { opacity: 0; transform: translate(0px,20px); }
+    100% { opacity: 1; transform: translate(0px,0px); }
+}
+
+@keyframes title-capa {
+    0% { opacity: 0; transform: translate(0px,-20px); }
+    100% { opacity: 1; transform: translate(0px,0px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1000px) {
+    .navigation li{
+        display: none;
+    }
+
+    .navigation li.threeline-icon{
+        display: inline-block;
+    }
+
+    .profile-image{
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+    }
+    .profile-title{
+        width: 100%;
+        margin-top: 0px;
+
+    }
+
+    .capa div{
+        display: block;
+        height: auto;
+    }
+
+    .profile-image img{
+        max-width: 80%;
+        margin-top: 0px;
+    }
+
+    .profile-title h1{
+        
+        text-align: center;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .profile-title h2{
+        text-align: center;
+        font-size: 12px;
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .main{
+        padding: 20px 5% 40px 5%;
+    }
+    .main h1{
+        font-size: 30px;
+        margin-top: 0px;
+    }  
+
+    .main h2{
+        font-size: 12px;
+        margin-top: 0px;
+    }
+    .main h3{
+        font-size: 16px;
+        margin-top: 0px;
+    }
+    .main p{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: left;
+    }
+    .cv-pic{
+        float: none;
+        max-width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+
+    .main a{
+        font-size: 12px;
+    }
+    .social-img{
+        width: 30px;
+        margin-right: 5px;
+    }
+    .miniatura{
+        max-width: 100%;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .blackbox{
+        height: 200px;
+        opacity: 0.5;
+    }
+    .blackbox-text h1{
+        font-size: 20px;
+    }
+    .back-text{
+        font-size: 20px;
+    }
+    .blackbox-text{
+        padding-top: 50px;
+    }
+    .caminho li{
+        font-size: 12px;
+    }
+    .caminho li a{
+        font-size: 12px;
+    }
+}
